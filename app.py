@@ -97,7 +97,7 @@ st_lottie(
 
 )
 st.title("get movies recommended")
-similarity=pickle.load(open('similarity.pkl','rb'))
+similarity=pickle.load(open('similarity.pkl','rb'),protocol=2)
 
 
 
