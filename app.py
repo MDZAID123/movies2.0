@@ -80,7 +80,7 @@ def fetch_poster(movie_id):
 
 
 
-movies_list=pickle.load(open('movie_dict.pkl','rb'),protocol=2)
+movies_list=pickle.load(open('movie_dict.pkl','rb'))
 movies=pd.DataFrame(movies_list)
 st.header("Movies2.0")
 hide_st_style="""
@@ -97,7 +97,7 @@ st_lottie(
 
 )
 st.title("get movies recommended")
-similarity=pickle.load(open('similarity.pkl','rb'),protocol=2)
+similarity=pickle.load(open('similarity.pkl','rb'))
 
 
 
